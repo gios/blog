@@ -11,12 +11,16 @@
     "gatsby-plugin-offline": "^2.0.20",
     "gatsby-plugin-react-helmet": "^3.0.5",
     "gatsby-plugin-sharp": "^2.0.17",
+    "gatsby-plugin-typography": "^2.2.4",
     "gatsby-source-filesystem": "^2.0.12",
     "gatsby-transformer-sharp": "^2.1.9",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-typography": "^0.16.18",
+    "typography": "^0.16.18",
+    "typography-theme-doelger": "^0.16.18"
   },
   "license": "GPL-3.0",
   "scripts": {
@@ -24,9 +28,12 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
+    "lint": "eslint src",
+    "audit": "npm run lint && npm run format",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
+    "eslint": "^5.11.1",
     "prettier": "^1.15.3"
   },
   "repository": {
