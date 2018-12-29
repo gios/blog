@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gios Blog`,
+    description: `Personal blog about code, technology and traveling in simple words.`,
+    author: `Pavlo Blazhchuk`,
+    nickname: `Gios`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,7 +11,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src`,
       },
     },
     {
@@ -24,12 +25,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Gios Blog`,
+        short_name: `Gios Blog`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/gatsby-icon.png`,
       },
     },
