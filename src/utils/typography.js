@@ -1,6 +1,6 @@
 import Typography from 'typography'
-import doelgerTheme from 'typography-theme-doelger'
+import funstonTheme from 'typography-theme-funston'
 
-const typography = new Typography(doelgerTheme)
+const typography = new Typography(funstonTheme)
 
 export default typography

@@ -6,13 +6,12 @@ const Layout = ({ children }) => (
     style={{
       margin: `0 auto`,
       maxWidth: 960,
-      padding: `0px 1.0875rem 1.45rem`,
-      paddingTop: 0,
+      padding: `0 1rem 1.5rem`,
     }}
   >
     {children}
     <footer>
-      © 2018, Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
+      © Gios { (new Date()).getFullYear() }
     </footer>
   </div>
 )
