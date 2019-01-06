@@ -3,7 +3,12 @@ module.exports = {
     title: `Gios Blog`,
     description: `Personal blog about code, technology and traveling in simple words.`,
     author: `Pavlo Blazhchuk`,
-    nickname: `Gios`
+    nickname: `Gios`,
+    socials: {
+      github: `https://github.com/gios`,
+      linkedin: `https://linkedin.com/in/pavloblazhchuk`,
+      twitter: `https://twitter.com/giosblazhchuk`
+    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

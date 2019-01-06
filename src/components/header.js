@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from "prop-types";
-import { Link } from "gatsby"
+import { StaticQuery, Link, graphql } from 'gatsby'
 
 const MenuLink = props => {
   return (
     <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-      <Link to={props.to}>{props.children}</Link>
+      <a href={props.to} target="_blank" rel="noopener noreferrer">{props.children}</a>
     </li>
   )
 }
@@ -17,18 +17,47 @@ MenuLink.propTypes = {
 
 export default class header extends Component {
 
+  renderSiteSocials(data) {
+    const components = []
+    const socials = data.site.siteMetadata.socials
+
+    for (const [key, value] of Object.entries(socials)) {
+      components.push(<MenuLink to={value}>{key.toLowerCase()}</MenuLink>)
+    }
+    return components
+  }
+
   render() {
     return (
-      <header style={{ marginBottom: `1.5rem` }}>
+      <header style={{
+        display: `flex`,
+        flexDirection: `column`,
+        alignItems: `center`
+      }}>
         <Link to="/">
-          <h3>Gios Blog Animated Img</h3>
+          <h3>Gios Blog</h3>
         </Link>
         <ul style={{ listStyle: `none` }}>
-          <MenuLink to="/">Home</MenuLink>
-          <MenuLink to="/about/">About</MenuLink>
-          <MenuLink to="/contact/">Contact</MenuLink>
+          <StaticQuery
+            query={siteSocials}
+            render={this.renderSiteSocials.bind(this)}
+          />
         </ul>
       </header>
     )
   }
 }
+
+const siteSocials = graphql`
+  query {
+    site {
+      siteMetadata {
+        socials {
+          github
+          linkedin
+          twitter
+        }
+      }
+    }
+  }
+`

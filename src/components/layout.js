@@ -1,12 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { rhythm } from "../utils/typography"
+
 const Layout = ({ children }) => (
   <div
     style={{
       margin: `0 auto`,
       maxWidth: 960,
-      padding: `0 1rem 1.5rem`,
+      padding: `${rhythm(0.5)}`,
+      paddingTop: `${rhythm(1)}`
     }}
   >
     {children}

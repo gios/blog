@@ -19,7 +19,7 @@ export default class SEO extends Component {
     title: PropTypes.string.isRequired,
   }
 
-  renderDetailsQuery(data) {
+  renderDetails(data) {
     const { description, lang, title, keywords, meta } = this.props
     const metaDescription = description || data.site.siteMetadata.description
 
@@ -68,7 +68,7 @@ export default class SEO extends Component {
     return (
       <StaticQuery
         query={detailsQuery}
-        render={this.renderDetailsQuery.bind(this)}
+        render={this.renderDetails.bind(this)}
       />
     )
   }
