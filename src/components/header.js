@@ -42,7 +42,7 @@ export default class header extends Component {
         }}
       >
         <Link to="/">
-          <h3 style={{ textTransform: "uppercase" }}>Gios Blog</h3>
+          <h3 style={{ textTransform: 'uppercase' }}>Gios Blog</h3>
         </Link>
         <ul style={{ listStyle: `none` }}>
           <StaticQuery
