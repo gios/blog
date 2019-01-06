@@ -1,3 +1,8 @@
+---
+title: "Amigos 2"
+date: "2017-11-11"
+---
+
 # Test 2 Altae sedes fessus fastigiaque Crotonis honore
 
 ## Tibi nunc dixi

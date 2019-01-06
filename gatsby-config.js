@@ -25,6 +25,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       }
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

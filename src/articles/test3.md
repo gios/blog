@@ -1,3 +1,9 @@
+---
+title: "Amigos 3"
+date: "2017-10-21"
+---
+
+
 # Test 3 Altae sedes fessus fastigiaque Crotonis honore
 
 ## Tibi nunc dixi
