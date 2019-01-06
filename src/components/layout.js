@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { rhythm } from "../utils/typography"
+import { rhythm } from '../utils/typography'
 
 const Layout = ({ children }) => (
   <div
@@ -9,13 +9,11 @@ const Layout = ({ children }) => (
       margin: `0 auto`,
       maxWidth: 960,
       padding: `${rhythm(0.5)}`,
-      paddingTop: `${rhythm(1)}`
+      paddingTop: `${rhythm(1)}`,
     }}
   >
     {children}
-    <footer>
-      © Gios { (new Date()).getFullYear() }
-    </footer>
+    <footer>© Gios {new Date().getFullYear()}</footer>
   </div>
 )
 
