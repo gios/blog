@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { linksColor } from '../utils/colors';
+import { linksColor, dateColor } from '../utils/colors';
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -13,14 +13,10 @@ const IndexPage = ({ data }) => (
 
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>
-        <div className="header">
-          <div>
-            <Link to={node.fields.slug}>
-              <h3 style={{ color: linksColor }}>{node.frontmatter.title}</h3>
-            </Link>
-          </div>
-          <div style={{ color: `#bbb` }}>— {node.frontmatter.date}</div>
-        </div>
+        <Link to={node.fields.slug}>
+          <h3 style={{ color: linksColor }}>{node.frontmatter.title}</h3>
+        </Link>
+        <div style={{ color: dateColor }}>{node.frontmatter.date} - {node.timeToRead}min</div>
         <p>{node.excerpt}</p>
       </div>
     ))}
@@ -38,6 +34,7 @@ export const query = graphql`
       edges {
         node {
           id
+          timeToRead
           frontmatter {
             title
             date(formatString: "DD MMMM YYYY")

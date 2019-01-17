@@ -1,5 +1,5 @@
 import Typography from 'typography'
-import theme from 'typography-theme-grand-view'
+import theme from 'typography-theme-stow-lake'
 
 const typography = new Typography(theme)
 
