@@ -1,9 +1,9 @@
 ---
-title: "Amigos 2"
+title: "Amigos 2 Altae sedes fessus fastigiaque Crotonis honore"
 date: "2017-11-11"
 ---
 
-# Test 2 Altae sedes fessus fastigiaque Crotonis honore
+## Test 2 Altae sedes fessus fastigiaque Crotonis honore
 
 ## Tibi nunc dixi
 

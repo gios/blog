@@ -1,7 +1,7 @@
 import Typography from 'typography'
-import funstonTheme from 'typography-theme-funston'
+import theme from 'typography-theme-grand-view'
 
-const typography = new Typography(funstonTheme)
+const typography = new Typography(theme)
 
 export default typography
 export const rhythm = typography.rhythm

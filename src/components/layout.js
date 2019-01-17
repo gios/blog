@@ -13,7 +13,9 @@ const Layout = ({ children }) => (
     }}
   >
     {children}
-    <footer>© Gios {new Date().getFullYear()}</footer>
+    <footer style={{
+      textAlign: `center`
+    }}>Gios {new Date().getFullYear()}</footer>
   </div>
 )
 

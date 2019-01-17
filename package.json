@@ -20,7 +20,7 @@
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",
-    "typography-theme-funston": "^0.16.18"
+    "typography-theme-grand-view": "^0.16.18"
   },
   "license": "GPL-3.0",
   "scripts": {

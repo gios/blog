@@ -1,10 +1,9 @@
 ---
-title: "Amigos 3"
+title: "Amigos 3 Altae sedes fessus fastigiaque Crotonis honore"
 date: "2017-10-21"
 ---
 
-
-# Test 3 Altae sedes fessus fastigiaque Crotonis honore
+## Test 3 Altae sedes fessus fastigiaque Crotonis honore
 
 ## Tibi nunc dixi
 
